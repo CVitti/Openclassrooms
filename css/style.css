@@ -1,0 +1,66 @@
+/* Box sizing sur tous les éléments */
+* {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+/* Mise en place de la police des titres et Logo */
+
+/* *{
+    font-family: 'Shrikhand', cursive;
+} */
+
+/* Mise en place de la police des textes */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  */
+/* Classes basiques */
+/*  */
+
+.flexcentre{
+    display: flex;
+    justify-content: center;
+}
+
+.flexstart{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.flexend{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.flexaround{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexbetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.margin0{
+    margin: 0px;    
+}
