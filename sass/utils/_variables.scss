@@ -1,0 +1,29 @@
+// Couleurs
+
+$color-primary : #9356DC;
+$color-secondary : #FF79DA;
+$color-tertiary : #99E2D0;
+
+$color-lightpurple: #F5EDFF;
+
+$color-lightgrey : #F6F6F6;
+$color-grey : #EAEAEA;
+$color-darkgrey : #353535;
+
+
+// Breakpoints
+
+// Mobile jusqu'à 768px
+// Tablette entre 769px et 992px
+// Desktop-low entre 993px et 1280
+// Desktop-mid entre 1281px et 1440px
+// Desktop-full : 1441px et +
+$breakpoints: (
+    tab-min: 769px,
+    tab-max: 992px,
+    desktop-low-min: 993px,
+    desktop-low-max: 1280px,
+    desktop-mid-min: 1281px,
+    desktop-mid-max: 1440px,
+    desktop-full: 1441px
+);

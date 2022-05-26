@@ -1,0 +1,31 @@
+// Mixin Tablette
+
+@mixin tab-only {
+    @media screen and (min-width: map-get($breakpoints, tab-min)) and (max-width: map-get($breakpoints, tab-max)) {
+        @content;
+    }
+}
+
+// Mixin Desktop Low
+
+@mixin lowdesktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop-low-min)) and (max-width: map-get($breakpoints, desktop-low-max)) {
+        @content;
+    }
+}
+
+// Mixin Desktop Mid
+
+@mixin middesktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop-mid-min)) and (max-width: map-get($breakpoints, desktop-mid-max)) {
+        @content;
+    }
+}
+
+// Mixin Desktop Low
+
+@mixin fulldesktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop-full)){
+        @content;
+    }
+}
