@@ -1,0 +1,44 @@
+
+
+/* Mise en place de la police des textes */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/* Mise en place de la police des titres et Logo footer */
+
+
+h1{
+    font-size: 25px;
+}
+
+h2{
+    font-size: 20px;
+
+    &.logofooter{
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+h3{
+    font-size: 17px;
+}
+
+// Epaisseur de la police
+
+.font{
+    &--400{
+        font-weight: 400;
+    }
+    &--500{
+        font-weight: 500;
+    }
+    &--600{
+        font-weight: 600;
+    }
+    &--300{
+        font-weight: 300;
+    }
+}
