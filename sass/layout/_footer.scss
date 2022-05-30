@@ -1,0 +1,13 @@
+footer{
+    background-color: $color-darkgrey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    *{
+        color: white;
+    }
+    ul{
+        padding-left: 15px;
+        list-style-type: none;
+    }
+}
