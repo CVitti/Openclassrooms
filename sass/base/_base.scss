@@ -48,6 +48,9 @@ body{
 // Gap entre les flexbox
 .gap{
     &__body{
+        row-gap: 20px;
+    }
+    &__main{
         row-gap: 30px;
     }
     &__location{
@@ -56,4 +59,16 @@ body{
     &__description{
         row-gap: 25px;
     }
+    &__steps{
+        row-gap: 25px;
+    }
+    &__cardsteps{
+        column-gap: 5px;
+    }
+}
+
+// Marge sur tous les h2 et largeur à 100%
+
+h2{
+    padding-left: 10px;
 }

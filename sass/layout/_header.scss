@@ -1,27 +1,3 @@
-// Mise en forme des DIV
-.div{
-    // Div Localisation accueil
-    &__location{
-        width: 100%;
-        background-color: $color-grey;
-        height: 50px;
-        box-shadow : inset 0px 8px 16px -17px black;
-        color: $color-darkgrey;
-    }
-    // Div Description page d'accueil
-    &__description{
-        background-color: $color-lightgrey;
-        text-align: center;
-        height: fit-content;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        h1{
-            width: 80%;
-            margin: auto;
-        }
-        p{
-            width: 90%;
-            margin: auto;
-        }
-    }
+header{
+    width: 100%;
 }

@@ -4,6 +4,9 @@ $color-primary : #9356DC;
 $color-secondary : #FF79DA;
 $color-tertiary : #99E2D0;
 
+$color-lightprimary : lighten($color: $color-primary, $amount: 5);
+$color-lightsecondary : lighten($color: $color-secondary, $amount: 5);
+
 $color-lightpurple: #F5EDFF;
 
 $color-lightgrey : #F6F6F6;

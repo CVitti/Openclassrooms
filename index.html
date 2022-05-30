@@ -26,56 +26,58 @@
     </head>
 <body class="flex flex--column gap__body">
 
-    <header class="flex flex--column">
+    <header class="flex flex--center">
         <!-- Logo -->
         <img src="images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood" class="img__logo">
-
-        <!-- Localisation -->
-        <div class="div__location flex flex--center flex--aligncenter font--600 gap__location">
-            <i class="fa-solid fa-location-dot fa-lg"></i>
-            Paris, Belleville
-        </div>
-
-        <div class="div__description flex flex--column flex--around flex--aligncenter gap__description">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-
-            <!-- Bouton de navigation-->
-            <nav>
-                <a href="#listerestaurants">
-                    <div>
-                        Explorer nos restaurants
-                    </div>
-                </a>
-            </nav>
-        </div>
-        
     </header>
 
-    <main>
-        
+    <main class="flex flex--column gap__main">
+
+        <section class="flex flex--column">
+            <!-- Localisation -->
+            <div class="flex flex--center flex--aligncenter gap__location div__location font--600">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+                Paris, Belleville
+            </div>
+
+            <!-- Description de l'entreprise -->
+            <div class="flex flex--column flex--around flex--aligncenter gap__description div__description ">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+
+                <!-- Bouton de navigation-->
+                <nav>
+                    <a href="#listerestaurants">
+                        <div>
+                            Explorer nos restaurants
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </section>
+
         <!-- Section Fonctionnement -->
-        <section>
+        <section class="flex flex--column gap__steps">
             <h2>Fonctionnement</h2>
 
             <!-- Etape 1 -->
-            <div>
-                <div>1</div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
+            <div class="flex flex--aligncenter div__cardstep gap__cardsteps">
+                <div class="flex flex--center flex--aligncenter nbstep">1</div>
+                <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
                 <h3>Choisissez un restaurant</h3>
             </div>
 
             <!-- Etape 2 -->
-            <div>
-                <div>2</div>
-                <i class="fa-solid fa-list"></i>
+            <div class="flex flex--aligncenter div__cardstep gap__cardsteps">
+                <div class="flex flex--center flex--aligncenter nbstep">2</div>
+                <i class="fa-solid fa-list fa-lg"></i>
                 <h3>Composez votre menu</h3>
             </div>
 
             <!-- Etape 3 -->
-            <div>
-                <div>3</div>
-                <i class="fa-solid fa-store"></i>
+            <div class="flex flex--aligncenter div__cardstep gap__cardsteps">
+                <div class="flex flex--center flex--aligncenter nbstep">3</div>
+                <i class="fa-solid fa-store fa-lg"></i>
                 <h3>Dégustez au restaurant</h3>
             </div>
 
