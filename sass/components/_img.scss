@@ -1,15 +1,26 @@
 .img{
+
+    // Logo Accueil
     &__logo{
         padding-top: 20px;
         padding-bottom: 20px;
         width: 60%;
         max-height: 90px;
     }
+
+    // Image sur la card de la page d'accueil
     &__card{
         width: 100%;
         height: 150px;
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+
+    // Image en haut des menus
+    &__menu{
+        height: 200px;
+        object-fit:cover;
+        width: 100%;
     }
 }

@@ -1,0 +1,156 @@
+.div{
+    &__imgmenu{
+        height: 175px;
+    }
+
+    // div pour un item Entrée/plat/dessert
+    &__item{
+        width: 100%;
+        height: 65px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 10px -1px darken($color: $color-grey, $amount: 20);
+
+        // Survol de l'item pour faire apparaitre la partie Check
+        &:hover{
+            // Réduction de la taille du nom + complément de l'item
+            & > .div__infositem{
+                width: 70%;
+            }
+            // Augmentation de la taille du div check
+            & > a{
+                width: 15%;
+            }
+            & .div__check{
+                & i{
+                    transform: rotate(360deg);
+                    transition: transform 0.4s;
+                }
+            }
+        }
+
+        a{
+            width: 0%;
+            height: 65px;
+            display: block;
+            overflow: hidden;
+            transition: width 0.4s;
+        }
+    }
+
+    // Div Nom de l'Entrée/plat/dessert + complément en dessous
+    &__infositem{
+        width: 85%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        transition: width 0.4s;
+
+        // Troncature du texte
+        p{
+            width: 100%;
+            height: 50%;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            min-width: 0px;
+        }        
+    }
+
+    // Prix de l'Entrée/plat/dessert
+    &__itemprice{
+        width: 15%;
+        align-items: center;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-bottom: 13px;
+    }
+
+    // Div check qui apparait à droite au survol de l'item
+    &__check{
+        background-color: $color-tertiary;
+        color: white;
+        width: 100%;
+        height: 65px;
+        overflow: hidden;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    // Animation au chargement pour 4 items
+    &__animlist4{
+        @for $i from 2 through 5 {
+            .div__item:nth-child(#{$i}n) {
+                opacity: 0;
+                animation: loadinglist 0.5s;
+                animation-fill-mode: forwards;
+                animation-delay: #{$i * 0.5}s;
+            }
+        }
+    }
+
+    // Animation au chargement pour 3 items
+    &__animlist3{
+        @for $i from 2 through 4 {
+            .div__item:nth-child(#{$i}n) {
+                opacity: 0;
+                animation: loadinglist 0.5s;
+                animation-fill-mode: forwards;
+                animation-delay: #{$i * 0.5}s;
+            }
+        }
+    }
+
+    &__entetemenu{
+        opacity: 0;
+        animation: loadingentete 1s 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+h2{
+    &.logomenu{
+        width: 80%;
+        padding-left: 0px;
+    }
+}
+
+h3{
+    &.menutitle{
+        padding-bottom: 5px;
+        &::after{
+            content: "";
+            display: block;
+            height: 3px;
+            width: 45px;
+            background-color: $color-tertiary;
+        }
+    }
+}
+
+@keyframes loadinglist {
+    0%{
+        transform: translateY(20%);
+    }
+    75%, 100% {
+        opacity: 1;
+    }  
+    100%{
+        transform: translateY(0%);
+    }  
+
+}
+
+@keyframes loadingentete {
+    0%{
+        transform: translateY(20%);
+    }
+    75%, 100% {
+        opacity: 1;
+    }  
+    100%{
+        transform: translateY(0%);
+    }
+}

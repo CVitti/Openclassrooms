@@ -9,6 +9,7 @@
 // Taille minimale du body
 body{
     min-width: 320px;
+    position: relative;
 }
 
 // Flexbox
@@ -72,6 +73,15 @@ body{
     }
     &__listfooter{
         row-gap: 10px;
+    }
+    &__sectionmenu{
+        row-gap: 30px;
+    }
+    &__listitems{
+        row-gap: 15px;
+    }
+    &__infositem{
+        row-gap: 5px;
     }
 }
 

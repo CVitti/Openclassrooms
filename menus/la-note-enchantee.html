@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <title>OhMyFood</title>        
+    
+    <!-- CSS Perso -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4e18fab892.js" crossorigin="anonymous"></script>
+    
+    <!-- Import de la police Logo et titres (Shrikhand)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    
+    <!-- Import de la police texte (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body class="flex flex--column">
+    
+    <header class="flex flex-row flex--aligncenter menu">
+        <!-- Bouton retour -->
+        <div class="flex flex--center flex--aligncenter div__retour">
+            <a href="../index.html">
+                <i class="fa-solid fa-arrow-left fa-2xl"></i>
+            </a>     
+        </div>
+        <!-- Logo -->
+        <h1 class="flex flex--center flex--aligncenter logo">ohmyfood</h1>
+    </header>
+    
+    <main class="flex flex--column">
+
+        <!-- Image du restaurant en arrière-plan -->
+        <div class="div__imgmenu">
+            <img src="../images/restaurants/la-note-enchantee.jpg" alt="La note enchantée" class="img__menu">
+        </div>      
+        
+        <!-- Section du menu -->
+        <section class="flex flex--column listemenu gap__sectionmenu">
+
+            <!-- En-tête Nom du restaurant + bouton like -->
+            <div class="flex flex--row flex--between">
+                <h2 class="logo logomenu">La note enchantée</h2>
+                <div class="flex flex--aligncenter flex--center div__like" title="Sauvegarder ce restaurant dans les favoris">
+                    <div class="div__likehover">
+                        <span class="span--unliked"><i class="fa-regular fa-heart fa-lg fa-fw"></i></span>
+                        <span class="span--liked"><i class="fa-solid fa-heart fa-lg fa-fw"></i></span>
+                    </div>                        
+                </div>
+            </div>
+
+            <!-- Partie entrées -->
+            <div class="flex flex--column gap__listitems div__animlist4">
+                <!-- Titre Entrees + séparation colorée -->
+                <div class="div__entetemenu">
+                    <h3 class="menutitle">ENTREES</h3>
+                </div>
+
+                <!-- Entrée n°1 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Ravioles de foie gras </p>
+                        <p class="supplement">Accompagnés de leur crème à la truffe</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>25€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+                <!-- Entrée n°2 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Caviar osciètre</p>
+                        <p class="supplement">Sur blini à la farine de blé noir</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>35€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+                <!-- Entrée n°3 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Homard et espuma de potiron</p>
+                        <p class="supplement">Mariné aux zestes d'orange</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>20€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+                <!-- Entrée n°4 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Foie gras de canard cuit entier</p>                        
+                        <p class="supplement">Confiture de figue et pain toasté</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>35€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+            </div>
+
+            <!-- Partie Plats -->
+            <div class="flex flex--column gap__listitems div__animlist3">
+                <!-- Titre Plats + séparation colorée -->
+                <div class="div__entetemenu">
+                    <h3 class="menutitle">PLATS</h3>
+                </div>
+
+                <!-- Plat n°1 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Noix de coquilles Saint-Jacques</p>
+                        <p class="supplement">Sur lit de purée de céleri-rave</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>40€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+                <!-- Plat n°2 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Langoustine poêlée</p>
+                        <p class="supplement">Purée de patate douce</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>35€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+                <!-- Plat n°3 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Mijoté de queue de boeuf</p>
+                        <p class="supplement">Et riz sauvage aux zestes de citron</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>44€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+            </div>
+
+            <!-- Partie Desserts -->
+            <div class="flex flex--column gap__listitems div__animlist3">
+                <!-- Titre Dessert + séparation colorée -->
+                <div class="div__entetemenu">
+                    <h3 class="menutitle">DESSERTS</h3>
+                </div>
+
+                <!-- Dessert n°1 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Macaron noisette et chocolat</p>
+                        <p class="supplement">Glace au caramel brun et sel de Guérande</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>18€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+                <!-- Dessert n°2 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Baba au rhum revisité</p>
+                        <p class="supplement">Avec son coulis de citron</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>22€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+
+                <!-- Dessert n°3 -->
+                <div class="flex flex--row div__item">
+                    <div class="flex flex--column div__infositem gap__infositem">
+                        <p class="titleitem font--600">Tarte au citron meringuée</p>
+                        <p class="supplement">Déstructurée</p>
+                    </div>
+                    <div class="flex flex--column flex--end div__itemprice font--500">
+                        <span>23€</span>
+                    </div>
+                    <!-- Bouton Check à afficher au survol-->
+                    <a href="#">
+                        <div class="flex flex--center flex--aligncenter div__check">
+                            <i class="fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </a>                    
+                </div>
+            </div>
+
+            <!-- Bouton de navigation-->
+            <nav class="flex flex--center">
+                <a href="#" class="button">
+                    Commander
+                </a>
+            </nav>
+
+        </section>
+        
+    </main>
+    
+    <footer class="flex flex--column gap__footer">
+        <h2 class="logo">ohmyfood</h2>
+        <ul class="flex flex--column gap__listfooter">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-utensils fa-fw"></i>
+                    Proposer un restaurant
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-handshake-angle fa-fw"></i>
+                    Devenir partenaire
+                </a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:ohmyfood@gmail.com">Contact</a>
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

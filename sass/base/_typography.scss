@@ -8,21 +8,42 @@
 }
 
 /* Mise en place de la police des titres et Logo footer */
+.logo{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+}
 
 h1{
     font-size: 25px;
+    &.logo{
+        font-size: 30px;
+    }
 }
 
 h2{
     font-size: 20px;
-    &.logofooter{
-        font-family: 'Shrikhand', cursive;
+    &.logo{
+        font-size: 24px;
+    }
+}
+
+
+
+h3{
+    font-size: 17px;
+    &.menutitle{
+        font-size: 15px;
         font-weight: 400;
     }
 }
 
-h3{
-    font-size: 17px;
+p{
+    &.titleitem{
+        font-size: 16px;
+    }
+    &.supplement{
+        font-size: 14px;
+    }
 }
 
 // Epaisseur de la police

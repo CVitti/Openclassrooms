@@ -2,22 +2,43 @@
 a{
     text-decoration: none;
     color: black;
+
+    // Lien card restaurants sur la page d'accueil 
     &.liencard{
         width: 90%;
     }
+
+    // Bouton avec dégradé et ombre
     &.button{
         display: block;
         width: fit-content;
         margin: auto;
         padding: 20px;
         color: white;
-        background: linear-gradient(170deg, $color-secondary 10%, $color-primary 75%);
+        box-shadow: 0px 2px 4px 1px darken($color: $color-grey, $amount: 30);
         border-radius: 30px;
-        box-shadow: 0px 3px 10px 1px darken($color: $color-grey, $amount: 30);
-        transition-duration: 0.25s;
-        &:hover{
-            box-shadow: 0px 3px 10px 4px darken($color: $color-grey, $amount: 30);
-            background: linear-gradient(170deg, $color-lightsecondary 10%, $color-lightprimary 75%);            
+        transition: box-shadow 700ms;
+        position: relative;
+        background: linear-gradient(170deg, $color-secondary 10%, $color-primary 75%);
+        z-index: 1;
+        &:hover {
+            box-shadow: 0px 4px 5px 2px darken($color: $color-grey, $amount: 30);
+            &::after {
+                opacity: 1;                
+            }
+        }
+        &::after {
+            border-radius: 30px;
+            background: linear-gradient(170deg, $color-lightsecondary 10%, $color-lightprimary 75%);
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 700ms;
         }
     }
 }
