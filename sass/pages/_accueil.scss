@@ -96,16 +96,17 @@
     // Étapes de la section Fonctionnement
     &__step{
         width: 85%;
+        max-width: 275px;
         background-color: $color-lightgrey;
-        margin: auto;
         height: 60px;
         border-radius: 15px;
         box-shadow: 0px 3px 10px -1px darken($color: $color-grey, $amount: 20);
-        transition-duration: 0.25s;
+        transition: background-color 0.25s;
+
         i{
             color: darken($color: $color-grey, $amount: 35);
             width: 30px;
-            transition-duration: 0.25s;
+            transition: color 0.25s;
         }
         &:hover{
             background-color: $color-lightpurple;
@@ -164,5 +165,10 @@
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
+    }
+
+    // Div Like Card Accueil
+    &__like{
+        width: 20%;        
     }
 }

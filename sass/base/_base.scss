@@ -10,6 +10,14 @@
 body{
     min-width: 320px;
     position: relative;
+    margin: auto;
+    width: 100%;
+    @include media(mobile){
+        max-width: 500px;
+    }
+    @include media(tab, desktop-low, desktop-mid, desktop-full){
+        max-width: none;
+    }
 }
 
 // Flexbox
@@ -59,6 +67,9 @@ body{
     }
     &__steps{
         row-gap: 25px;
+        column-gap: 20px;
+    }
+    &__cardsteps{
         column-gap: 5px;
     }
     &__listerestaurants{
@@ -76,6 +87,7 @@ body{
     }
     &__sectionmenu{
         row-gap: 30px;
+        column-gap: 10px;
     }
     &__listitems{
         row-gap: 15px;

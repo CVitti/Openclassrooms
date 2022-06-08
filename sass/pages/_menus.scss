@@ -3,6 +3,21 @@
         height: 175px;
     }
 
+    // Div contenant le nom du restaurant + bouton like
+    &__name{
+        position: relative;
+        width: 100%;
+    }
+    
+    &__likemenu{
+        position: absolute; 
+        right: 20px; 
+        top : 8px;
+        @include media(tab, desktop-low, desktop-mid, desktop-full){
+            right: 40px;
+        }  
+    }
+
     // div pour un item Entrée/plat/dessert
     &__item{
         width: 100%;
@@ -23,7 +38,7 @@
             & .div__check{
                 & i{
                     transform: rotate(360deg);
-                    transition: transform 0.4s;
+                    transition: transform 0.4s 0.1s;
                 }
             }
         }
@@ -78,7 +93,7 @@
     }
 
     // Animation au chargement pour 4 items
-    &__animlist4{
+    &__animlist{
         @for $i from 2 through 5 {
             .div__item:nth-child(#{$i}n) {
                 opacity: 0;
@@ -87,17 +102,17 @@
                 animation-delay: #{$i * 0.5}s;
             }
         }
-    }
-
-    // Animation au chargement pour 3 items
-    &__animlist3{
-        @for $i from 2 through 4 {
-            .div__item:nth-child(#{$i}n) {
-                opacity: 0;
-                animation: loadinglist 0.5s;
-                animation-fill-mode: forwards;
-                animation-delay: #{$i * 0.5}s;
-            }
+        @include media(tab){
+            margin: auto;
+            width: 50%;
+        }
+        @include media(desktop-low, desktop-mid, desktop-full){
+            max-width: 450px;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 30%;
+            justify-content: space-between;
         }
     }
 
@@ -112,7 +127,7 @@
 
 h2{
     &.logomenu{
-        width: 80%;
+        width: 100%;
         padding-left: 0px;
     }
 }
@@ -120,12 +135,8 @@ h2{
 h3{
     &.menutitle{
         padding-bottom: 5px;
-        &::after{
-            content: "";
-            display: block;
-            height: 3px;
-            width: 45px;
-            background-color: $color-tertiary;
+        & span{
+            border-bottom: solid 3px $color-tertiary;
         }
     }
 }

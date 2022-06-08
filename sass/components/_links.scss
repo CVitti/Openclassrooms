@@ -6,6 +6,12 @@ a{
     // Lien card restaurants sur la page d'accueil 
     &.liencard{
         width: 90%;
+        @include media(tab, desktop-low){
+            width: 45%;
+        }    
+        @include media(desktop-mid, desktop-full){
+            width: 20%;
+        }       
     }
 
     // Bouton avec dégradé et ombre

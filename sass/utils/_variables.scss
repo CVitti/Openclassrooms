@@ -21,11 +21,9 @@ $color-darkgrey : #353535;
 // Desktop-mid entre 1281px et 1440px
 // Desktop-full : 1441px et +
 $breakpoints: (
-    tab-min: 769px,
-    tab-max: 992px,
-    desktop-low-min: 993px,
-    desktop-low-max: 1280px,
-    desktop-mid-min: 1281px,
-    desktop-mid-max: 1440px,
+    mobile: 0px,
+    tab: 769px,
+    desktop-low: 993px,
+    desktop-mid: 1281px,
     desktop-full: 1441px
 );
