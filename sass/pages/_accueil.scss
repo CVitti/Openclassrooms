@@ -3,7 +3,7 @@
     &__loadingspinner{
         background-color: $color-lightgrey;
         opacity: 1;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         height: 100%;
